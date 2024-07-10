@@ -213,6 +213,23 @@ button {
   padding-top: 120px;
 }
 
+.about-us-icon {
+  display: flex;
+  gap: 24px;
+}
+
+.about-us-icon-item {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background-color: #f4f4fd;
+}
+
+.icon {
+  margin: 24px 100px;
+}
+
 .about-us-list {
   display: flex;
   gap: 24px;
