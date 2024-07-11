@@ -82,6 +82,8 @@ button {
   height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
+  position: absolute;
+  bottom: 0px;
 }
 
 .nav-logo {
@@ -102,6 +104,7 @@ button {
 .nav-title {
   display: flex;
   gap: 40px;
+  position: relative;
 }
 
 .nav-list {
