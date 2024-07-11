@@ -56,6 +56,8 @@ button {
 .header {
   background-color: #fff;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -153,7 +155,8 @@ button {
     url(../images/hero-img.jpg);
   background-repeat: no-repeat;
   background-position: center center;
-  block-size: cover;
+  /* background-size: cover;
+  max-width: 1440px; */
 }
 
 .main-hero {
@@ -175,7 +178,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
-  background: #4d5ae5;
+  background-color: #4d5ae5;
   font-family: "Roboto", sans-serif;
   border-radius: 4px;
   border: none;
@@ -184,14 +187,15 @@ button {
   margin-left: auto;
   margin-right: auto;
   min-width: 169px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover {
-  background: #404bbf;
+  background-color: #404bbf;
 }
 
 .hero-button:focus {
-  background: #404bbf;
+  background-color: #404bbf;
 }
 
 /*--------------HERO----------*/
@@ -455,7 +459,11 @@ button {
 
 .footer-container {
   display: flex;
-  gap: 120px;
+  align-items: baseline;
+}
+
+.footer-logo-container {
+  margin-right: 120px;
 }
 
 .footer-logo {
@@ -508,6 +516,9 @@ button {
 }
 
 .footer-icon-item:hover {
+  background-color: #31d0aa;
+}
+.footer-icon-item:focus {
   background-color: #31d0aa;
 }
 
