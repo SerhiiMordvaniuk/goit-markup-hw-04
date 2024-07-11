@@ -230,12 +230,12 @@ button {
   align-items: center;
 }
 
-.icon {
+/* .icon {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
-}
+} */
 
 .about-us-list {
   display: flex;
@@ -331,8 +331,14 @@ button {
   display: flex;
   gap: 24px;
   padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
   justify-content: center;
   align-items: center;
+}
+
+.team-icon-list-item {
+  width: calc((100% - 72px) / 4);
 }
 
 .team-icon-item {
@@ -406,6 +412,34 @@ button {
   letter-spacing: 0.02em;
   color: #434455;
 }
+
+.portfolio-img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-container {
+  background-color: #4d5ae5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transform: translateX(100%);
+}
+
+.portfolio-overlay:hover .overlay-container {
+  transform: translateX(0);
+}
+
+.overlay-txt {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
+
 /*--------------OUR PORTFOLIO----------*/
 
 /*-------------FOOOTER----------*/
